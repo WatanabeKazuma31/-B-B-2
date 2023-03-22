@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>茶葉園</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- ヘッダー -->
+    <header>
+      <nav class="g-navi-pc">
+        <div class="pc-logo">
+          <img src="./images/logo/header-icon.png" alt="ナビロゴ">
+        </div>
+
+        <!-- グローバルナビゲーション -->
+        <div class="nav-wrapper">
+          <ul>
+            <li class="nav-item"><a href="#concept">コンセプト</a></li>
+            <li class="nav-item"><a href="#kodawari">こだわり</a></li>
+            <li class="nav-item"><a href="#oshinagaki">お品書き</a></li>
+            <li class="nav-item"><a href="#tennpojouhou">店舗情報</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- sp用グローバルナビゲーション -->
+      <nav class="g-navi-sp">
+        <div class="sp-logo">
+          <img src="./images/logo/sp-header-icon.png" alt="spロゴ">
+        </div>
+
+        <!-- ハンバーガーメニュー -->
+        <div class="hamburger-menu">
+          <div class="trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+    <!-- メインビジュアル -->
+    <section id="main-visual">
+      <div class="mv-img">
+        <div class="img pict01 active"></div>
+        <div class="img pict02"></div>
+        <div class="img pict03"></div>
+      </div>
+
+      <div class="mv-btn">
+        <div class="btn-wrapper">
+          <span class="btn show"></span>
+          <span class="btn"></span>
+          <span class="btn"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- pcバナー -->
+    <section id="banner">
+      <div class="pc-banner">
+        <img src="./images/banner/pc-banner.jpg" alt="PCバナー">
+      </div>
+
+      <!-- spバナー -->
+      <div class="sp-banner">
+        <img src="./images/banner/sp-banner.jpg" alt="">
+      </div>
+    </section>
+
+    <!-- コンセプト -->
+    <section id="concept">
+      <div class="container">
+        <div class="title-border">
+          <h1>コンセプト</h1>
+        </div>
+
+        <div class="ct-wrapper">
+          <div class="ct-title">
+            <p>抹茶<span>イレル</span> 心<span>オドル</span></p>
+          </div>
+
+          <div class="ct-main">
+            <p class="ct-text">抹茶はおいしいだけではなく、 身体に良いものとされています。</p>
+            <p class="ct-text">茶葉園では、抹茶を飲んでいる時間に もっとワクワクしてほしい。 そんな願いを込めてある工夫を施しております。</p>
+            <p class="ct-text">お客様の優雅なひとときに<br>華（茶葉）を添えるため、精進して参ります。</p>
+          </div>
+        </div>
+
+        <div class="ct-staff">
+          <p class="staff-text">茶葉園代表取締役<br>宇治 かおり</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- こだわり -->
+    <section id="kodawari">
+      <div class="container">
+        <div class="title-border">
+          <h1>こだわり</h1>
+        </div>
+
+        <div class="kw-main01">
+          <div class="kw-img01">
+            <img src="./images/kodawari/kodawari1.jpg" alt="" class="pict">
+            <img src="./images/en/en.png" alt="" class="en">
+            <h2>一、独自の製法</h2>
+          </div>
+          <div class="kw-text01">
+            <p class="text01">抹茶の製造は当社自社抹茶製造工場で原料から加工まで 一貫して製品化されております。</p>
+          </div>
+        </div>
+
+        <div class="kw-main02">
+          <div class="kw-text02">
+            <p class="text02">すべての商品にオーガニック茶葉を利用しております。</p>
+          </div>
+          <div class="kw-img02">
+            <img src="./images/kodawari/kodawari2.jpg" alt="" class="pict">
+            <img src="./images/en/en.png" alt="" class="en">
+            <h2>二、オーガニック茶葉使用</h2>
+          </div>
+        </div>
+
+        <div class="kw-main03">
+          <div class="kw-img03">
+            <img src="./images/kodawari/kodawari3.jpg" alt="" class="pict">
+            <img src="./images/en/en.png" alt="" class="en">
+            <h2>三、安心・安全</h2>
+          </div>
+          <div class="kw-text03">
+            <p class="text03">私たちの扱う全ての茶葉は、お茶の土台となる土からすべて茶葉園が管理しております。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- お品書き -->
+    <section id="oshinagaki">
+      <div class="container lineup-boxes">
+        <div class="title-border">
+          <h1>お品書き</h1>
+        </div>
+
+        <div class="lineup-menu" id="js-tab">
+          <ul class="filter">
+            <li class="lineup-tab active"><a class="ホット" href="#" data-filter="ホット">ホット</a></li>
+            <li class="lineup-tab"><a class="アイス" href="#" data-filter="アイス">アイス</a></li>
+            <li class="lineup-tab"><a class="甘味" href="#" data-filter="甘味">甘味</a></li>
+            <li class="lineup-tab"><a class="贈り物" href="#" data-filter="贈り物">贈り物</a></li>
+          </ul>
+
+          <!-- ホット -->
+          <div class="lineup-wrapper" data-category="ホット">
+            <div class="lineup-product">
+              <div class="lineup-image">
+                <img src="./images/osinagaki/hot1.png" alt="ホット抹茶">
+              </div>
+              <div class="lineup-text">
+                <p class="text title">ホット抹茶</p>
+                <p class="text description">いつもの抹茶です。こだわり抜いた茶葉の美味しさをダイレクトに感じられる商品になっております。</p>
+                <p class="text price">￥700（税抜）</p>
+              </div>
+            </div>
+
+            <div class="lineup-product second">
+              <div class="lineup-image">
+                <img src="./images/osinagaki/hot2.png" alt="ホット抹茶ラテ">
+              </div>
+              <div class="lineup-text">
+                <p class="text title">ホット抹茶ラテ</p>
+                <p class="text description">いつもの抹茶に甘味をプラス。<br>当店では北海道産のこだわりの牛乳を使用しています。</p>
+                <p class="text price">￥700（税抜）</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- アイス -->
+          <div class="lineup-wrapper" data-category="アイス">
+            <div class="lineup-product">
+              <div class="lineup-image">
+                <img src="./images/osinagaki/ice1.png" alt="アイス抹茶">
+              </div>
+              <div class="lineup-text">
+                <p class="text title">アイス抹茶</p>
+                <p class="text description">暑い日にぴったり<br>抹茶の美味しさをダイレクトに感じれる冷たくて爽やかな商品です。</p>
+                <p class="text price">￥700（税抜）</p>
+              </div>
+            </div>
+
+            <div class="lineup-product second">
+              <div class="lineup-image">
+                <img src="./images/osinagaki/ice2.png" alt="アイス抹茶ラテ">
+              </div>
+              <div class="lineup-text">
+                <p class="text title">アイス抹茶ラテ</p>
+                <p class="text description">冷たくすっきりとした味わい<br>こだわりの牛乳が奏でる抹茶とのハーモニー</p>
+                <p class="text price">￥700（税抜）</p>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- 甘味 -->
+          <div class="lineup-wrapper" data-category="甘味">
+            <div class="lineup-product">
+              <div class="lineup-image">
+                <img src="./images/osinagaki/kanmi1.jpeg" alt="抹茶のロールケーキ">
+              </div>
+              <div class="lineup-text">
+                <p class="text title">抹茶のロールケーキ</p>
+                <p class="text description">ほどよい甘さで大人に大人気<br>ふわふわ生地の中<br>抹茶の渋さと甘さを堪能ください。</p>
+                <p class="text price">￥800（税抜）</p>
+              </div>
+            </div>
+
+            <div class="lineup-product second">
+              <div class="lineup-image">
+                <img src="./images/osinagaki/kanmi2.jpeg" alt="抹茶のカステラ">
+              </div>
+              <div class="lineup-text">
+                <p class="text title">抹茶のカステラ</p>
+                <p class="text description">子供から大人まで世代を問わず人気な逸品<br>今日という日を特別に彩るそんなカステラここにあります！</p>
+                <p class="text price">￥850（税抜）</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 贈り物 -->
+          <div class="lineup-wrapper" data-category="贈り物">
+            <div class="lineup-product">
+              <div class="lineup-image">
+                <img src="./images/osinagaki/gifts1.jpeg" alt="最高品質茶葉">
+              </div>
+              <div class="lineup-text">
+                <p class="text title">最高品質茶葉</p>
+                <p class="text description">茶葉園オリジナル茶葉<br>ここでしか味わえない茶葉の香りを堪能ください</p>
+                <p class="text price">￥1500（税抜）</p>
+              </div>
+            </div>
+
+            <div class="lineup-product second">
+              <div class="lineup-image">
+                <img src="./images/osinagaki/gifts2.jpeg" alt="最高品質茶葉（粉末）">
+              </div>
+              <div class="lineup-text">
+                <p class="text title">最高品質茶葉（粉末）</p>
+                <p class="text description">隙間時間を優雅に<br>すぐ楽しめるひとときを<br>品質を落とさず茶葉園らしさを感じられます。</p>
+                <p class="text price">￥900（税抜）</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 店舗情報 -->
+    <section id="tennpojouhou">
+      <div class="container">
+        <div class=" title-border">
+          <h1>店舗情報</h1>
+        </div>
+
+        <div class="store-wrapper">
+          <div class="store-image">
+            <img src="./images/store.jpg" alt="店舗イメージ">
+          </div>
+
+          <div class="store-description">
+            <table>
+              <tr>
+                <td>店舗名</td>
+                <td class="B store-name"> 茶葉園 光ヶ丘本店</td>
+              </tr>
+              <tr>
+                <td>定休日</td>
+                <td class="B"> 隔週水曜日</td>
+              </tr>
+              <tr>
+                <td>電話番号</td>
+                <td class="B"> 03-4567-8910</td>
+              </tr>
+              <tr>
+                <td>営業時間</td>
+                <td class="B"> 10:00〜20:00</td>
+              </tr>
+              <tr class="store-address">
+                <td class="store-address">所在地</td>
+                <td class="store-address B"> 東京都練馬区光ヶ丘1-2-3</td>
+              </tr>
+              <tr class="store-map">
+                <td class="store-map"></td>
+                <td class="B store-map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3237.299703196783!2d139.6378797!3d35.7680137!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ec68a9ef1ebd%3A0x78aa3a4b81deef7!2z44CSMTc5LTAwNzIg5p2x5Lqs6YO957e06aas5Yy65YWJ44GM5LiY77yR5LiB55uu77yS4oiS77yTIOmnkOi7iuWgtA!5e0!3m2!1sja!2sjp!4v1667367723713!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- フッダー -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./images/logo/footer-icon.png" alt="PCロゴ">
+        </div>
+
+        <div class="footer-right">
+          <div class="footer-menu">
+            <!-- spロゴ -->
+            <div class="sp-footer-logo">
+              <img src="./images/logo/sp-footer-icon.png" alt="">
+            </div>
+
+            <div class="menu">
+              <ul>
+                <li><a href="#concept">コンセプト</a></li>
+                <li><a href="#kodawari">こだわり</a></li>
+                <li><a href="#oshinagaki">お品書き</a></li>
+                <li><a href="#store">店舗情報</a></li>
+              </ul>
+            </div>
+            <div class="menu">
+              <ul>
+                <li><a href="#">プライバシーポリシー</a></li>
+                <li><a href="#">利用規約</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="copyright">
+            <small>©︎ 2022 chabaen icn.</small>
+          </div>
+        </div>
+      </div>
+      <div class="sp-copyright">
+        <small>©︎ 2022 chabaen icn.</small>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="./JS/script.js"></script>
+
+</html>
